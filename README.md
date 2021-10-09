@@ -85,5 +85,7 @@ curl: (7) Failed to connect to api.stomore.com port 443: Connection refused
 server.port: 443
 ```
 
+43 6 * * * certbot renew --post-hook "systemctl reload nginx"
+
 Source:
 https://www.anote.dev/certbot-for-https-with-lets-encrypt/
